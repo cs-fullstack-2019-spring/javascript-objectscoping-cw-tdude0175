@@ -70,9 +70,9 @@ peopleList.push({firstName:"Jimmy", lastName:"Page",age:62,zipCode:'00821'},
 
 function ReturnPeopleWithCorretZip(zipToCompare)
 {
-    var number = 0;
+    var number = 1;
     do{
-        
+
             if (zipToCompare === peopleList[number].zipCode)
             {
                 console.log(peopleList[number].firstName ," ", peopleList[number].lastName);
