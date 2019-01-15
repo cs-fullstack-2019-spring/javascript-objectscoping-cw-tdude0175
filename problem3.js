@@ -68,9 +68,9 @@ peopleList.push({firstName:"Jimmy", lastName:"Page",age:62,zipCode:'00821'},
 //
 // peopleList[0].getBandandZip();
 
-function ReturnPeopleWithCorretZip(zipToCompare)
+function ReturnPeopleWithCorrectZip(zipToCompare)
 {
-    var number = 1;
+    var number = 0;
     do{
 
             if (zipToCompare === peopleList[number].zipCode)
@@ -90,4 +90,4 @@ function ReturnPeopleWithCorretZip(zipToCompare)
 }
 
 
-ReturnPeopleWithCorretZip('21120');
+ReturnPeopleWithCorrectZip('00821');
