@@ -35,7 +35,11 @@ double 0s make the code think it's an "octal number"
 put people in that array "information given"
 adding the object is not that hard simply link to the index of the array to the object then add the value you want to add
 adding a function is as easy as adding a value to an object inside the the element
-
+using a for loop instead of a forEach loop for the zipcode comparison
+it cannot see what to compare inside the array
+pull it out or reach in?
+i can build the function inside each individual object
+is there a way to build the function outside
 
  */
 
@@ -65,30 +69,25 @@ peopleList.push({firstName:"Jimmy", lastName:"Page",age:62,zipCode:'00821'},
 // peopleList[0].getBandandZip();
 
 function ReturnPeopleWithCorretZip(zipToCompare)
-
 {
-
-
+    var number = 0;
     do{
-        var defineEnd =0;
-        peopleList.forEach(let personZipCode = )
-        {
-
-            if (zipToCompare === this.zipCode) {
-                console.log(this.firstName, " ", this.lastName);
+        
+            if (zipToCompare === peopleList[number].zipCode)
+            {
+                console.log(peopleList[number].firstName ," ", peopleList[number].lastName);
                  var x = true
-            } else if(defineEnd === 4)
+            }
+            else if(number === 5)
                 {
                     alert("No matching zip");
-                    break
-
+                    var x = true;
                 }
-            defineEnd++
-        }
 
-    }while
-        (x !== true)
+        number++
+    }
+    while (x !== true );
 }
 
 
-ReturnPeopleWithCorretZip('00821');
+ReturnPeopleWithCorretZip('21120');
